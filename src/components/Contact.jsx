@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#FFFDF5] p-6">
+    <div className=" flex flex-col items-center justify-center bg-[#FFFDF5] p-6">
       <h1 className="text-4xl font-bold mb-8">تواصل معنا</h1>
 
       
