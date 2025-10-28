@@ -1,4 +1,3 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -9,33 +8,18 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="flex flex-col min-h-screen bg-[#FFFDF5]">
-        <Header />
-
-        <main className="flex-grow">
-          <Routes>
-
-            <Route
-              path="/"
-              element={
-                <>
-                  <Hero />
-                  <OurValues />
-                </>
-              }
-            />
-
-
-            <Route path="/menu" element={<Menu />} />
-            <Route path='/contact' element={<Contact />}/>
-          </Routes>
-        </main>
-
-        <Footer />
+    <>
+      <Header />
+      <Hero />
+      <div id="menu">
+        <Menu />
       </div>
-    </BrowserRouter>
+      <OurValues />
+      <div id="contact">
+        <Contact />
+      </div>
+      <Footer />
+    </>
   );
 }
-
 export default App;
